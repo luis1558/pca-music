@@ -1,6 +1,7 @@
 swiper-container {
   width: 80%;
   height: 80%;
+  padding-top: 70px;
 }
 
 swiper-slide {
@@ -11,15 +12,15 @@ swiper-slide {
 }
 
 .cool-title {
-  color: red;
+  color: #fff;
 }
 
 .cutom-bg-color {
-  --background: aqua;
+  --background: rgb(147, 173, 173);
 }
 
 .sp-bg-color {
-  background-color: violet;
+  background-color: rgb(138, 181, 189);
 }
 
 /*ion-avatar {
@@ -28,4 +29,14 @@ swiper-slide {
 
 .style-avatar {
   --border-radius: 0px;
+}
+
+.img-slide {
+  width: 400px;
+  height: 400px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
 }
