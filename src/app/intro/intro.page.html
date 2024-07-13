@@ -1,0 +1,18 @@
+<ion-content class="cutom-bg-color">
+  <ion-icon name="close-outline" (click)="close()"></ion-icon>
+  <h1>Redes Sociales</h1>
+  <swiper-container class="sp-bg-color">
+
+    <swiper-slide *ngFor="let slide of slides">
+      <h2 class="cool-title">{{slide.title}}</h2>
+      <ion-avatar class="style-avatar">
+        <img alt="Silhouette of a person's head" src="{{slide.avatar}}" />
+      </ion-avatar>
+      <ion-icon name="{{slide.icon}}"></ion-icon>
+      <p>{{slide.description}}</p>
+      <img class="img-slide " src="{{slide.image}}" alt="imagen">
+    </swiper-slide>
+
+  </swiper-container>
+
+</ion-content>

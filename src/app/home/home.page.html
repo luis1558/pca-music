@@ -1,18 +1,7 @@
-<ion-content class="cutom-bg-color">
+<ion-content>
   
-    <h1>Redes Sociales</h1>
-    <swiper-container class="sp-bg-color">
+  Hola soy el home
 
-      <swiper-slide *ngFor="let slide of slides">
-        <h2 class="cool-title">{{slide.title}}</h2>
-        <ion-avatar class="style-avatar">
-          <img alt="Silhouette of a person's head" src="{{slide.avatar}}" />
-        </ion-avatar>
-        <ion-icon name="{{slide.icon}}"></ion-icon>
-        <p>{{slide.description}}</p>
-        <img class="img-slide " src="{{slide.image}}" alt="imagen">
-      </swiper-slide>
-
-    </swiper-container>
+  <ion-icon name="albums-outline" (click)="intro()"></ion-icon>
 
 </ion-content>
