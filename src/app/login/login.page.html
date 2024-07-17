@@ -10,6 +10,19 @@
     <img class="ion-padding-top" src="assets/images/profile-login.jpg" alt="profile">
   </figure>
 
-  <p class="ion-hide">Hola mundo</p>
+  <form [formGroup]="loginForm" (ngSubmit)="(loginUser(loginForm.value))">
+    <ion-item>
+      <ion-input label="Email" labelPlacement="floating" placeholder="Email" formControlName="email"></ion-input>       
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Password" labelPlacement="floating" placeholder="Password" formControlName="password"></ion-input> 
+    </ion-item>
+
+    <ion-button type="submit"
+    >
+      Login
+    </ion-button>
+  </form>
 
 </ion-content>
