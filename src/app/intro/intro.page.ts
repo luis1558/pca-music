@@ -52,7 +52,7 @@ export class IntroPage implements OnInit {
   close() {
     //console.log("estoy cerrando")
     this.storage.set('isIntroShowed', true)
-    this.router.navigateByUrl("/home")
+    this.router.navigateByUrl("/")
   }
 
 }
