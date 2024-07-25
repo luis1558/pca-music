@@ -7,9 +7,17 @@
 </ion-header>
 
 <ion-content>
-  
-  Hola soy el home
 
   <ion-icon name="albums-outline" (click)="intro()"></ion-icon>
+
+  <h1>Artistas</h1>
+  <swiper-container slides-per-view="4" speed="400">
+    <swiper-slide *ngFor="let artstis of artists">
+      <ion-avatar>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/adele-ciatica-1672934524.jpg" alt="">
+        <span>Nombre del artista</span>
+      </ion-avatar>
+    </swiper-slide>
+  </swiper-container>
 
 </ion-content>

@@ -8,6 +8,14 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
+  artists= [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ]
   
 
   constructor(private router: Router) {}
