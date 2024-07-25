@@ -14,8 +14,8 @@
   <swiper-container slides-per-view="4" speed="400">
     <swiper-slide *ngFor="let artstis of artists">
       <ion-avatar>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/adele-ciatica-1672934524.jpg" alt="">
-        <span>Nombre del artista</span>
+        <img src="{{artstis.image}}" alt="">
+        <span>{{artstis.name}}</span>
       </ion-avatar>
     </swiper-slide>
   </swiper-container>
