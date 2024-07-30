@@ -1,0 +1,57 @@
+ion-header {
+  ion-toolbar {
+    background-color: #1e90ff; // Color de fondo del toolbar
+    color: white; // Color del texto del toolbar
+
+    ion-buttons {
+      ion-button {
+        color: white; // Color del icono de retroceso
+      }
+    }
+  }
+}
+
+ion-content {
+  --background: #f5f5f5; // Color de fondo del contenido
+
+  figure {
+    display: flex;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  form {
+    ion-item {
+      --background: transparent;
+      --border-color: #1e90ff; // Color del borde de los inputs
+      --highlight-color-focused: #1e90ff; // Color de los inputs cuando están enfocados
+
+      ion-input {
+        --color: #1e90ff; // Color del texto de los inputs
+      }
+    }
+
+    .ion-padding-top,
+    .ion-padding-bottom {
+      margin: 10px 0;
+    }
+
+    ion-button {
+      --background: #1e90ff; // Color de fondo de los botones
+      --color: white; // Color del texto de los botones
+
+      &:disabled {
+        --background: #a9a9a9; // Color de fondo del botón deshabilitado
+      }
+    }
+
+    div {
+      color: red; // Color del texto de los mensajes de validación
+      margin: 5px 0;
+    }
+  }
+}
